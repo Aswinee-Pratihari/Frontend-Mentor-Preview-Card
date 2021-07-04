@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-background:hsl(233, 47%, 7%);
+    --card-background:hsl(244, 38%, 16%);
+    --accent:hsl(277, 64%, 61%);
+    --main-heading:hsl(0, 0%, 100%);
+    --main-para:hsla(0, 0%, 100%, 0.75);
+    --stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+body{
+    color: var(--main-heading);
+    font-size: 15px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--main-background);
+}
+
+.container{
+    background: var(--main-background);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+        /* border: 2p solid green;  */
+
+}
+.container .card{
+    width: 80%;
+    height: 90vh;
+ 
+display: flex;
+background: var(--card-background);
+flex-direction: column-reverse;
+justify-content: space-between;
+margin: 3rem auto;
+border-radius: 10px;
+}
+
+.container .card .img{
+    background: url(./images/image-header-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    height: 40%;
+    border-radius: 10px 10px 0px 0px;
+}
+.container .card .img .overlay{
+    border-radius: 0 .5rem .5rem 0;
+    width: 100%;
+    height: 17rem;
+    background-color: var(--accent);
+    mix-blend-mode: multiply;
+  
+}
+
+.container .card .content{
+ 
+    height: 60%;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.container .card .content h1{
+    margin-bottom: 1rem;
+}
+.container .card .content h1 span{
+    color: var(--accent);
+}
+
+.container .card .content p{
+    margin-bottom: 1rem;
+    color: var(--main-para);
+    line-height: 1rem;
+    font-size: 13px;
+}
+.container .card .content li  span{
+    font-weight: 700;
+    color: var(--main-heading);
+}
+
+.container .card .content li{
+    margin-bottom: 1rem;
+    list-style: none;
+    margin: 0 auto;
+    list-style: none;
+
+font-family:'Lexend Deca', sans-serif ;
+color: var(--stat-heading);
+}
+  @media screen and (min-width: 1100px){
+    .container .card{
+        flex-direction: row;
+        width: 80%;
+height: 74%;
+background: var(--card-background);
+flex-direction: row;
+justify-content: space-between;
+border-radius: 15px;
+    }
+  
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container .card .content{
+      
+        font-size: 1.4rem;
+        padding: 4rem 3rem;
+        width: 88%;
+   height: 100%;
+   text-align: justify;
+    }
+    .container .card .img {
+  
+        background: url(./images/image-header-desktop.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+     
+    }
+    .container .card .img .overlay{
+        border-radius: 0 .5rem .5rem 0;
+        width: 100%;
+        height: 36rem;
+        background-color: var(--accent);
+        mix-blend-mode: multiply;
+    }
+ 
+    .container .card .content ul{
+        display: flex;
+        margin-top: 3rem;
+   
+    }
+    .container .card .content ul li{
+        font-family:'Lexend Deca', sans-serif ;
+        color: var(--stat-heading);
+        font-size: 1rem;
+   
+    }
+    .container .card .content p{
+      
+        font-size: 18px; 
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        margin: 2rem 0;
+        line-height: 1.8rem;
+        width: 90%;
+    }
+    
+} 
+
